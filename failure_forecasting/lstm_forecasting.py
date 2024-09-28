@@ -1,15 +1,29 @@
-import numpy as np
-import tensorflow as tf
+import pandas as pd
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
-# Generate simulated data
+# # Generate simulated data
+# time_steps = 100
+# features = 1
+# X = np.random.randn(1000, time_steps, features)
+# y = np.random.randint(0, 2, size=(1000, 1))
+
+
+# Load data from CSV file
+data = pd.read_csv('../data/failure_forecasting_data.csv')
+
+# Assuming the last column is the target and the rest are features
+X = data.iloc[:, :-1].values  # All rows, all columns except the last
+y = data.iloc[:, -1].values   # All rows, last column
+
 time_steps = 100
-features = 1
-X = np.random.randn(1000, time_steps, features)
-y = np.random.randint(0, 2, size=(1000, 1))
+features = X.shape[1] // time_steps
+
+# Reshape X based on time_steps and features
+X = X.reshape(-1, time_steps, features)
+y = y.reshape(-1, 1)
 
 # Split data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)

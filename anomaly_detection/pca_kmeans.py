@@ -1,15 +1,10 @@
 import pandas as pd
-import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 
-# Generate simulated data (replace this with your actual data)
-np.random.seed(42)
-data = np.random.normal(size=(100, 5))
-anomalies = np.random.uniform(low=-5, high=5, size=(5, 5))
-data_with_anomalies = np.vstack([data, anomalies])
+data_with_anomalies = pd.read_csv('../data/anomaly_detection_data.csv')
 
 # Create a pandas DataFrame
 columns = [f'feature_{i}' for i in range(1, 6)]  # Create feature names

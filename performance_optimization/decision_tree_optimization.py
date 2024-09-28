@@ -1,3 +1,4 @@
+import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix
 from sklearn.datasets import make_classification
@@ -5,8 +6,12 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Generate simulated data
-X, y = make_classification(n_samples=1000, n_features=5, random_state=42)
+# Load data from CSV file
+data = pd.read_csv('../data/performance_optimization_data.csv')
+
+# Assuming the last column is the target and the rest are features
+X = data.iloc[:, :-1].values  # All rows, all columns except the last
+y = data.iloc[:, -1].values   # All rows, last column
 
 # Split data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
