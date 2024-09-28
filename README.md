@@ -4,11 +4,14 @@ Este repositorio contiene el código fuente y ejemplos prácticos relacionados c
 
 El proyecto se enfoca en aplicar técnicas de análisis predictivo para mejorar la observabilidad del software en sistemas automotrices.
 
+English version available [here](README.en.md).
+
 ## Formación Académica
 
-Este TFM es parte de los estudios de **MBA con Especialidad en Business Intelligence y Big Data** del Instituto Europeo de Posgrado, lo cual otorgará una **triple titulación**:
-- **MBA y Máster Executive en Business Intelligence y Big Data** por el Instituto Europeo de Posgrado.
-- **Executive Program in Business Administration** por **Summa University (EEUU)**.    
+Este TFM es parte de los estudios de **MBA con Especialidad en Business Intelligence y Big Data** del [Instituto Europeo de Posgrado (IEP)](https://iep.edu.es/), lo cual otorgará una **triple titulación**:
+- **MBA y Máster Executive en Business Intelligence y Big Data** por el [Instituto Europeo de Posgrado (IEP)](https://iep.edu.es/).
+- **Executive Program in Business Administration** por [Summa University (EEUU)](https://summauniversity.us/).
+
 ## Autores
 - **Roberto Minelli**
 - **Omar Herazo Mestra**
@@ -38,12 +41,12 @@ Para ejecutar el código incluido en este repositorio, se recomienda tener insta
 
 - Python 3.8+
 - Bibliotecas de Python:
-    - `numpy`
-    - `pandas`
-    - `scikit-learn`
-    - `tensorflow`
-    - `keras`
-    - `matplotlib`
+  - `numpy`
+  - `pandas`
+  - `scikit-learn`
+  - `tensorflow`
+  - `keras`
+  - `matplotlib`
 
 Puedes instalar las bibliotecas necesarias utilizando el siguiente comando:
 
@@ -52,32 +55,30 @@ pip install -r requirements.txt
 ```
 
 ## Uso
+
 Cada subcarpeta contiene un archivo de ejemplo que muestra cómo ejecutar el código correspondiente. A continuación, se proporciona una descripción básica de cómo utilizar cada técnica:
 
-### Detección de Anomalías:
+1. **Detección de Anomalías**:
+    - Navega a la carpeta `anomaly_detection/` y ejecuta `pca_kmeans.py` para ver cómo se implementa la detección de anomalías utilizando PCA y K-Means.
 
-Navega a la carpeta anomaly_detection/ y ejecuta pca_kmeans.py para ver cómo se implementa la detección de anomalías utilizando PCA y K-Means.
+2. **Pronóstico de Fallos**:
+    - Dirígete a la carpeta `failure_forecasting/` y ejecuta `lstm_forecasting.py` para entrenar y evaluar el modelo LSTM.
 
-### Pronóstico de Fallos:
+3. **Optimización del Rendimiento**:
+    - Ve a `performance_optimization/` y ejecuta `decision_tree_optimization.py` para ver cómo se implementa la optimización del rendimiento usando Árboles de Decisión.
 
-Dirígete a la carpeta failure_forecasting/ y ejecuta lstm_forecasting.py para entrenar y evaluar el modelo LSTM.
-
-### Optimización del Rendimiento:
-
-Ve a performance_optimization/ y ejecuta decision_tree_optimization.py para ver cómo se implementa la optimización del rendimiento usando Árboles de Decisión.
 ## Resultados
+
 Los resultados obtenidos de cada modelo están documentados en el TFM, donde se demuestra cómo estas técnicas predictivas pueden mejorar la observabilidad y rendimiento del software automotriz. La implementación completa y los gráficos generados por los modelos también están disponibles en las subcarpetas correspondientes.
 
 ## Contribuciones
+
 Este repositorio es parte de un trabajo de investigación académico y, por lo tanto, no se aceptan contribuciones externas en este momento. Si tienes sugerencias o comentarios, por favor, ponte en contacto con los autores.
 
 ## Licencia
-Este proyecto está licenciado bajo la Licencia MIT, lo que permite su uso, distribución y modificación siempre que se dé crédito a los autores originales.
+
+Este proyecto está licenciado bajo la [Licencia MIT](LICENSE), lo que permite su uso, distribución y modificación siempre que se dé crédito a los autores originales.
 
 ## Referencias
+
 Minelli, R., & Herazo Mestra, O. (2024). Mejora de la Observabilidad del Software mediante Análisis Predictivo [Código fuente]. GitHub. https://github.com/rminelli/mejora-observabilidad-software-mediante-analisis-predictivo
-
-
-
-
-
