@@ -1,7 +1,14 @@
 # Mejora de la Observabilidad del Software mediante Análisis Predictivo
 
-Este repositorio contiene el código fuente y ejemplos prácticos relacionados con el Trabajo de Fin de Máster (TFM) titulado **"Mejora de la Observabilidad del Software mediante Análisis Predictivo: Detección de Anomalías, Pronóstico de Fallos y Optimización del Rendimiento"**. El proyecto se enfoca en aplicar técnicas de análisis predictivo para mejorar la observabilidad del software en sistemas automotrices.
+Este repositorio contiene el código fuente y ejemplos prácticos relacionados con el Trabajo de Fin de Máster (TFM) titulado **"Mejora de la Observabilidad del Software mediante Análisis Predictivo: Detección de Anomalías, Pronóstico de Fallos y Optimización del Rendimiento"**. 
 
+El proyecto se enfoca en aplicar técnicas de análisis predictivo para mejorar la observabilidad del software en sistemas automotrices.
+
+## Formación Académica
+
+Este TFM es parte de los estudios de **MBA con Especialidad en Business Intelligence y Big Data** del Instituto Europeo de Posgrado, lo cual otorgará una **triple titulación**:
+- **MBA y Máster Executive en Business Intelligence y Big Data** por el Instituto Europeo de Posgrado.
+- **Executive Program in Business Administration** por **Summa University (EEUU)**.    
 ## Autores
 - **Roberto Minelli**
 - **Omar Herazo Mestra**
